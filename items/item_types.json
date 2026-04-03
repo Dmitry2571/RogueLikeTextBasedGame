@@ -1,0 +1,7 @@
+{
+  "rusty_blade": {
+    "name": "Rusty Blade",
+    "type": "Weapon",
+    "base_value": 10
+  }
+}

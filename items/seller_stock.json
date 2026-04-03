@@ -1,0 +1,13 @@
+{
+  "Tarn": {
+    "fixed_items": [
+      {"id": "rusty_blade", "name": "Rusty Blade", "count": 3}
+    ],
+    "random_pool": [
+      {"name": "Weapon1", "count": 2},
+      {"name": "Weapon2", "count": 2},
+      {"name": "Weapon3", "count": 1}
+    ],
+    "random_slots": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "100": {
+    "name": "Arena Trial",
+    "desc": "Survive your first fight.",
+    "type": "main",
+    "initial_state":"active",
+    "exp": "28"
+  }
+}
