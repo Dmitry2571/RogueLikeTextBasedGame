@@ -144,5 +144,6 @@ class SlumsArena(Location):
                 print("You left the store in silence.")
                 break
             print('"Did you need anything else, fresh blood?')
+        print(self.description)
         
     
