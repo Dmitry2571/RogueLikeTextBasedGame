@@ -21,6 +21,9 @@ class SlumsArena(Location):
         
     #Определение локальных команд с точки входа в локацию            
     def _handle_local_command(self, choice: str) -> bool:
+        if super()._handle_local_command(choice):
+            return True
+        
         if choice in {'challenge', 'attack', 'fight', 'duel'}:
             self.enter_arena()
         elif choice in {'go to shop', 'shop'}:

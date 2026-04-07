@@ -1363,3 +1363,63 @@ Name-ID: {'rusty blade': 'rusty_blade'}.
 2026-04-07 16:04:54,086 - INFO - New item_id 1.
 2026-04-07 16:04:54,087 - INFO - Added 1 of Rusty Blade to new slot.
 2026-04-07 16:04:54,088 - INFO - Player change location. New location: SlumsArena_South_Ulayim
+2026-04-07 17:09:50,439 - INFO - Add item function
+2026-04-07 17:09:50,440 - INFO - New item_id 1.
+2026-04-07 17:09:50,440 - INFO - Added 3 of Rusty Blade to new slot.
+2026-04-07 17:09:50,441 - INFO - STOCK INFO: {'rusty_blade': {'name': 'Rusty Blade', 'sell_price': 7, 'buy_price': 100, 'in_stock': 3}}.
+2026-04-07 17:09:50,441 - INFO - SELLER STOCK: {'Tarn': {'fixed_items': [{'id': 'rusty_blade', 'name': 'Rusty Blade', 'count': 3}], 'random_pool': [{'name': 'Weapon1', 'count': 2}, {'name': 'Weapon2', 'count': 2}, {'name': 'Weapon3', 'count': 1}], 'random_slots': 0}}
+2026-04-07 17:09:50,442 - INFO - ITEM TYPES: {'rusty_blade': {'name': 'Rusty Blade', 'type': 'Weapon', 'base_value': 10}}
+2026-04-07 17:09:55,248 - INFO - Add item function
+2026-04-07 17:09:55,249 - INFO - New item_id 1.
+2026-04-07 17:09:55,249 - INFO - Added 1 of Rusty Blade to new slot.
+2026-04-07 17:09:55,250 - INFO - Player change location. New location: SlumsArena_South_Ulayim
+2026-04-07 17:10:07,947 - INFO - Damage 14
+2026-04-07 17:10:07,949 - INFO - Enemy choose: 4.
+2026-04-07 17:10:11,870 - INFO - Damage 16.25
+2026-04-07 17:10:11,871 - INFO - Enemy choose: 4.
+2026-04-07 17:10:13,152 - INFO - Damage 16.25
+2026-04-07 17:10:13,153 - INFO - Enemy choose: 4.
+2026-04-07 17:10:14,440 - INFO - Damage 13
+2026-04-07 17:10:14,441 - INFO - Enemy choose: 2.
+2026-04-07 17:10:16,165 - INFO - Damage 17.5
+2026-04-07 17:10:16,166 - INFO - Enemy choose: 2.
+2026-04-07 17:10:17,826 - INFO - Damage 14
+2026-04-07 17:10:17,827 - INFO - Enemy choose: 1.
+2026-04-07 17:10:20,218 - INFO - Damage 16.25
+2026-04-07 17:10:20,219 - INFO - Current exp: 5.
+2026-04-07 17:10:20,220 - INFO - Current exp: 33.
+2026-04-07 17:11:37,911 - INFO - Add item function
+2026-04-07 17:11:37,912 - INFO - New item_id 1.
+2026-04-07 17:11:37,913 - INFO - Added 3 of Rusty Blade to new slot.
+2026-04-07 17:11:37,913 - INFO - STOCK INFO: {'rusty_blade': {'name': 'Rusty Blade', 'sell_price': 7, 'buy_price': 100, 'in_stock': 3}}.
+2026-04-07 17:11:37,913 - INFO - SELLER STOCK: {'Tarn': {'fixed_items': [{'id': 'rusty_blade', 'name': 'Rusty Blade', 'count': 3}], 'random_pool': [{'name': 'Weapon1', 'count': 2}, {'name': 'Weapon2', 'count': 2}, {'name': 'Weapon3', 'count': 1}], 'random_slots': 0}}
+2026-04-07 17:11:37,914 - INFO - ITEM TYPES: {'rusty_blade': {'name': 'Rusty Blade', 'type': 'Weapon', 'base_value': 10}}
+2026-04-07 17:11:45,522 - INFO - Add item function
+2026-04-07 17:11:45,523 - INFO - New item_id 1.
+2026-04-07 17:11:45,524 - INFO - Added 1 of Rusty Blade to new slot.
+2026-04-07 17:11:45,525 - INFO - Player change location. New location: SlumsArena_South_Ulayim
+2026-04-07 17:11:54,250 - INFO - Damage 17.5
+2026-04-07 17:11:54,251 - INFO - Enemy choose: 3.
+2026-04-07 17:11:54,873 - INFO - Damage 16.25
+2026-04-07 17:11:54,874 - INFO - Enemy choose: 3.
+2026-04-07 17:11:55,763 - INFO - Damage 16.25
+2026-04-07 17:11:55,764 - INFO - Enemy choose: 1.
+2026-04-07 17:11:56,501 - INFO - Damage 15.0
+2026-04-07 17:11:56,502 - INFO - Enemy choose: 1.
+2026-04-07 17:11:57,280 - INFO - Damage 17.5
+2026-04-07 17:11:57,281 - INFO - Enemy choose: 1.
+2026-04-07 17:11:58,042 - INFO - Damage 17.5
+2026-04-07 17:11:58,043 - INFO - Enemy choose: 2.
+2026-04-07 17:11:59,679 - INFO - Damage 16.25
+2026-04-07 17:11:59,680 - INFO - Current exp: 5.
+2026-04-07 17:11:59,681 - INFO - Current exp: 33.
+2026-04-07 17:12:54,797 - INFO - Add item function
+2026-04-07 17:12:54,798 - INFO - New item_id 1.
+2026-04-07 17:12:54,798 - INFO - Added 3 of Rusty Blade to new slot.
+2026-04-07 17:12:54,799 - INFO - STOCK INFO: {'rusty_blade': {'name': 'Rusty Blade', 'sell_price': 7, 'buy_price': 100, 'in_stock': 3}}.
+2026-04-07 17:12:54,799 - INFO - SELLER STOCK: {'Tarn': {'fixed_items': [{'id': 'rusty_blade', 'name': 'Rusty Blade', 'count': 3}], 'random_pool': [{'name': 'Weapon1', 'count': 2}, {'name': 'Weapon2', 'count': 2}, {'name': 'Weapon3', 'count': 1}], 'random_slots': 0}}
+2026-04-07 17:12:54,800 - INFO - ITEM TYPES: {'rusty_blade': {'name': 'Rusty Blade', 'type': 'Weapon', 'base_value': 10}}
+2026-04-07 17:12:57,410 - INFO - Add item function
+2026-04-07 17:12:57,411 - INFO - New item_id 1.
+2026-04-07 17:12:57,411 - INFO - Added 1 of Rusty Blade to new slot.
+2026-04-07 17:12:57,412 - INFO - Player change location. New location: SlumsArena_South_Ulayim

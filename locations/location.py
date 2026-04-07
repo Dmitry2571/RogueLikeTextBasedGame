@@ -33,6 +33,9 @@ class Location:
             
             
     def _handle_local_command(self, choice: str) -> bool:
+        if choice in {"look around", "look"}:
+            print(self.description)
+            return True
         print("Try again, loser.")
         return False
         

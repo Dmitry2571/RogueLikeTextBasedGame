@@ -1,1 +1,5 @@
 /locations/__pycache__
+game.log
+locations/__pycache__/location.cpython-312.pyc
+locations/__pycache__/slums_arena.cpython-312.pyc
+*.pyc
