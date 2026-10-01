@@ -36,7 +36,7 @@ class Location:
         if choice in {"look around", "look"}:
             print(self.description)
             return True
-        print("Try again, loser.")
+        #print("Try again, loser.")
         return False
         
      

@@ -13,9 +13,9 @@ import logging
 
 game_info = {
     'name': 'Unnamed',
-    'version': "0.0.3c",
+    'version': "0.0.3c.a",
     'status': 'in progress',
-    'version_name': 'Arena Shop Sell System'
+    'version_name': 'Minor Fix. Arena Shop Sell System'
     }
 
 logger = logging.getLogger()

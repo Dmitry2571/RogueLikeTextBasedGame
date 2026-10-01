@@ -1,5 +1,9 @@
-/locations/__pycache__
+# macOS
+.DS_Store
+
+# Logs
 game.log
-locations/__pycache__/location.cpython-312.pyc
-locations/__pycache__/slums_arena.cpython-312.pyc
-*.pyc
+
+# Python cache
+__pycache__/
+*.py[cod]
