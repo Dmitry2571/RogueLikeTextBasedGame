@@ -16,32 +16,111 @@ class Inventory:
         self._max_slots = max_slots
         self._item_index = {} 
 
-    def add_item(self, item:Item, count=1):
-        logging.info("Add item function")
-        if len(self._items) >= self._max_slots:
-            print("Pathetic. Your pockets are stuffed like a beggar’s. Can’t carry more junk, loser.")
+    def add_item(self, item: Item, count=1):
+        logging.info(f"Adding {count} of {item.name}.")
+
+        if count <= 0:
             return
-        
-        for item_id, data in self._items.items():
-            current_item = data['item']
-            if current_item.name == item.name and item.stackable:
-                total = data['count'] + count
-                if total <= current_item.max_stack_size:
-                    self._items[item_id]["count"] = total
-                    logging.info(f"Added {count} to existing stack. Total: {total}") 
-                    print(f"You shoved your {item.name} into your bag. Good job, hoarder.")
+
+        remaining = count
+
+        # 1. Заполняем существующие стаки
+        if item.stackable:
+
+            for item_id, data in self._items.items():
+                current_item = data["item"]
+
+                if current_item.name != item.name:
+                    continue
+
+                current_count = data["count"]
+
+                free_space = (
+                    current_item.max_stack_size
+                    - current_count
+                )
+
+                if free_space <= 0:
+                    continue
+
+                add_count = min(free_space, remaining)
+
+                self._items[item_id]["count"] += add_count
+                remaining -= add_count
+
+                logging.info(
+                    f"Added {add_count} to slot {item_id}. "
+                    f"Remaining: {remaining}"
+                )
+
+                if remaining == 0:
+                    print(
+                        f"You shoved your {item.name} into your bag. "
+                        f"Good job, hoarder."
+                    )
+
+                    # альтернатива:
+                    # print(
+                    #     f"More {item.name}? Sure, why not. "
+                    #     f"Stuffed it in."
+                    # )
+
                     return
-                    
-        item_id = self.find_next_id()
-        logging.info(f'New item_id {item_id}.')
-        self._items[item_id] = {"item": item, "count": count}
-        if item.name in self._item_index:
-            self._item_index[item.name].append(item_id)
-        else:
-            self._item_index[item.name] = [item_id]
-        logging.info(f"Added {count} of {item.name} to new slot.")
-#        print(f"You shoved your {item.name} into your bag. Good job, hoarder.")
-#альтернатива:print(f"More {item.name}? Sure, why not. Stuffed it in.")
+
+        # 2. Создаём новые слоты
+        while remaining > 0:
+
+            if len(self._items) >= self._max_slots:
+                print(
+                    "Pathetic. Your pockets are stuffed "
+                    "like a beggar’s. Can’t carry more junk, loser."
+                )
+
+                logging.info(
+                    f"Inventory full. "
+                    f"Could not add {remaining} of {item.name}."
+                )
+
+                return
+
+            item_id = self.find_next_id()
+
+            if item.stackable:
+                add_count = min(
+                    item.max_stack_size,
+                    remaining
+                )
+            else:
+                add_count = 1
+
+            self._items[item_id] = {
+                "item": item,
+                "count": add_count
+            }
+
+            if item.name in self._item_index:
+                self._item_index[item.name].append(item_id)
+            else:
+                self._item_index[item.name] = [item_id]
+
+            remaining -= add_count
+
+            logging.info(
+                f"Added {add_count} of {item.name} "
+                f"to slot {item_id}. "
+                f"Remaining: {remaining}"
+            )
+
+        print(
+            f"You shoved your {item.name} into your bag. "
+            f"Good job, hoarder."
+        )
+
+        # альтернатива:
+        # print(
+        #     f"More {item.name}? Sure, why not. "
+        #     f"Stuffed it in."
+        # )
 
     def find_next_id(self):
         for i in range(1, self._max_slots + 1):
